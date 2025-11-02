@@ -84,15 +84,3 @@ All slices use `createAsyncThunk` for async operations and follow a consistent p
 
 All comic book data is provided by [Comic Vine](https://comicvine.gamespot.com/). The required attribution appears in the app footer.
 
-## Contributing
-
-Feel free to extend the app with additional features such as:
-- User favorites and collections
-- Pagination for search results
-- Advanced filtering options
-- Additional Comic Vine data (creators, publishers, story arcs)
-- Dark mode theme
-
-## License
-
-This project is for educational and personal use. Respect Comic Vine's [Terms of Use](https://comicvine.gamespot.com/api/documentation) when using their API.

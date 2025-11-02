@@ -1,0 +1,53 @@
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+  border: none;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.14);
+}
+
+.issue-card {
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.issue-card-image {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(37, 99, 235, 0.08));
+}
+
+.issue-card-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.issue-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.25rem;
+  font-weight: 600;
+  color: #2563eb !important;
+  background: rgba(37, 99, 235, 0.12);
+  border-radius: 999px;
+  align-self: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.clickable-card {
+  cursor: pointer;
+}
+
+.clickable-card:hover .issue-card-cta {
+  color: #ffffff !important;
+  background: #2563eb;
+}

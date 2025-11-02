@@ -1,0 +1,17 @@
+.attribution {
+  flex-shrink: 0;
+  padding: 1.75rem 0;
+  background: #ffffff;
+  color: #64748b;
+  text-align: center;
+  border-top: 1px solid rgba(100, 116, 139, 0.16);
+}
+
+.attribution a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}

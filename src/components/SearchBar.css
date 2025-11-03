@@ -1,0 +1,144 @@
+.search-bar-form {
+  position: relative;
+  z-index: 2;
+}
+
+.search-bar-form .input-group {
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.2),
+    0 8px 20px rgba(139, 92, 246, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  background: #ffffff;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.search-bar-form .input-group:focus-within {
+  transform: scale(1.02);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.25),
+    0 12px 25px rgba(139, 92, 246, 0.3),
+    0 0 0 4px rgba(255, 107, 53, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.search-bar-form .input-group-text {
+  background: transparent;
+  border: none;
+  padding: 0.85rem 1.25rem;
+  font-size: 1.5rem;
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.search-bar-form .form-control {
+  border: none;
+  background: transparent;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.search-bar-form .form-control:focus {
+  box-shadow: none;
+  background: transparent;
+}
+
+.search-bar-form .form-control::placeholder {
+  color: rgba(15, 23, 42, 0.5);
+  font-weight: 500;
+}
+
+.search-bar-form .btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 2rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: #ffffff;
+  margin: 4px;
+  box-shadow:
+    0 6px 15px rgba(255, 107, 53, 0.4),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-bar-form .btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.search-bar-form .btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  transform: scale(1.05) translateY(-2px);
+  box-shadow:
+    0 10px 25px rgba(139, 92, 246, 0.5),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.search-bar-form .btn:hover:not(:disabled)::before {
+  width: 300px;
+  height: 300px;
+}
+
+.search-bar-form .btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.search-bar-form .btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  animation: pulse-button 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-button {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.9; }
+}
+
+/* Add sparkles effect */
+.search-bar-form::before {
+  content: '✨';
+  position: absolute;
+  top: -1.5rem;
+  left: 10%;
+  font-size: 1.5rem;
+  animation: float-sparkle 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(253, 200, 48, 0.6));
+}
+
+.search-bar-form::after {
+  content: '⚡';
+  position: absolute;
+  top: -1.5rem;
+  right: 10%;
+  font-size: 1.5rem;
+  animation: float-sparkle 3s ease-in-out infinite 1.5s;
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+}
+
+@keyframes float-sparkle {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+  50% { transform: translateY(-10px) rotate(180deg); opacity: 1; }
+}

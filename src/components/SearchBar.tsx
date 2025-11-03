@@ -1,5 +1,6 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { Button, Form, Input, InputGroup, InputGroupText } from 'reactstrap';
+import './SearchBar.css';
 
 interface SearchBarProps {
   initialQuery?: string;
@@ -20,13 +21,13 @@ const SearchBar = ({ initialQuery = '', isLoading = false, onSearch }: SearchBar
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="mt-4">
+    <Form onSubmit={handleSubmit} className="mt-4 search-bar-form">
       <InputGroup size="lg">
         <InputGroupText aria-hidden="true">🔍</InputGroupText>
         <Input
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          placeholder="Search for a comic issue, e.g. “Hulk” or “Spider-Man”"
+          placeholder='Search for a comic issue, e.g. "Hulk" or "Spider-Man"'
           aria-label="Search comic issues"
         />
         <Button color="primary" type="submit" disabled={isLoading}>

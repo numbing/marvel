@@ -12,7 +12,7 @@
   transform: translateX(-50%);
   width: 120px;
   height: 6px;
-  background: #fdc830;
+  background: var(--color-accent);
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
 }
@@ -20,10 +20,10 @@
 .character-gallery-title {
   font-weight: 800;
   font-size: 2.5rem;
-  color: #ff6b35;
+  color: var(--color-primary);
   text-shadow:
-    2px 2px 0 #8b5cf6,
-    -1px -1px 0 #fdc830;
+    2px 2px 0 var(--color-secondary),
+    -1px -1px 0 var(--color-accent);
   display: inline-block;
   position: relative;
   animation: float 3s ease-in-out infinite;
@@ -48,7 +48,7 @@
   top: 1rem;
   left: 25%;
   font-size: 1.5rem;
-  color: #fdc830;
+  color: var(--color-accent);
   animation: twinkle 2s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(253, 200, 48, 0.6);
 }

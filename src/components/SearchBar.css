@@ -10,8 +10,8 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   overflow: hidden;
-  border: 4px solid #ffffff;
-  background: #ffffff;
+  border: 4px solid var(--color-white);
+  background: var(--color-white);
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -44,7 +44,7 @@
   padding: 0.85rem 1rem;
   font-size: 1.05rem;
   font-weight: 500;
-  color: #1e293b;
+  color: var(--color-text-gray);
 }
 
 .search-bar-form .form-control:focus {
@@ -63,8 +63,8 @@
   padding: 0.85rem 2rem;
   font-weight: 700;
   font-size: 1.05rem;
-  background: #ff6b35;
-  color: #ffffff;
+  background: var(--color-primary);
+  color: var(--color-white);
   margin: 4px;
   box-shadow:
     0 6px 15px rgba(255, 107, 53, 0.4),
@@ -89,7 +89,7 @@
 }
 
 .search-bar-form .btn:hover:not(:disabled) {
-  background: #8b5cf6;
+  background: var(--color-secondary);
   transform: scale(1.05) translateY(-2px);
   box-shadow:
     0 10px 25px rgba(139, 92, 246, 0.5),

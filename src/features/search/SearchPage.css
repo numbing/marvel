@@ -1,5 +1,5 @@
 .intro-card {
-  background: #ff6b35;
+  background: var(--color-primary);
   border-radius: 2rem;
   padding: clamp(2.5rem, 6vw, 4rem);
   text-align: center;
@@ -9,7 +9,7 @@
     inset 0 2px 0 rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
-  border: 5px solid #ffffff;
+  border: 5px solid var(--color-white);
 }
 
 .intro-card::before {
@@ -19,7 +19,7 @@
   left: -10%;
   width: 30%;
   height: 30%;
-  background: #fdc830;
+  background: var(--color-accent);
   border-radius: 50%;
   filter: blur(80px);
   opacity: 0.4;
@@ -56,14 +56,14 @@
 .intro-card h1 {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 900;
-  color: #ffffff;
+  color: var(--color-white);
   position: relative;
   z-index: 1;
   text-shadow:
     0 4px 8px rgba(0, 0, 0, 0.3),
     0 2px 4px rgba(0, 0, 0, 0.2),
-    3px 3px 0 #8b5cf6,
-    -2px -2px 0 #fdc830;
+    3px 3px 0 var(--color-secondary),
+    -2px -2px 0 var(--color-accent);
   letter-spacing: -0.02em;
   line-height: 1.1;
   animation: title-glow 3s ease-in-out infinite;
@@ -77,7 +77,7 @@
 .intro-card p {
   max-width: 50ch;
   margin: 1.25rem auto 0;
-  color: #ffffff;
+  color: var(--color-white);
   position: relative;
   z-index: 1;
   font-weight: 600;
@@ -89,12 +89,12 @@
 .search-results h2 {
   font-weight: 800;
   font-size: 2rem;
-  color: #ff6b35;
+  color: var(--color-primary);
   position: relative;
   display: inline-block;
   text-shadow:
-    2px 2px 0 #8b5cf6,
-    -1px -1px 0 #fdc830;
+    2px 2px 0 var(--color-secondary),
+    -1px -1px 0 var(--color-accent);
 }
 
 .search-results h2::after {
@@ -104,7 +104,7 @@
   left: 0;
   width: 60%;
   height: 4px;
-  background: #fdc830;
+  background: var(--color-accent);
   border-radius: 999px;
   box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
 }

@@ -5,6 +5,7 @@ import CharacterGrid from '../components/CharacterGrid';
 import SkeletonAvatarCard from '../components/skeleton/SkeletonAvatarCard';
 import IssueSkeleton from '../components/skeleton/IssueSkeleton';
 import PageContainer from '../components/PageContainer';
+import NotFoundPage from './NotFoundPage';
 import useIssueData from '../hooks/useIssueData';
 import { STATUS_LOADING, STATUS_FAILED, STATUS_SUCCEEDED } from '../constants/statusConstants';
 import './IssuePage.css';
@@ -12,6 +13,14 @@ import './IssuePage.css';
 const IssuePage = () => {
   const { id } = useParams<{ id: string }>();
   const { issueState, characterState } = useIssueData(id);
+
+  const is404 = issueState.status === STATUS_FAILED &&
+    issueState.error &&
+    issueState.error.includes('404');
+
+  if (is404) {
+    return <NotFoundPage />;
+  }
 
   return (
     <PageContainer>

@@ -7,6 +7,7 @@ import IssueSkeleton from '../components/skeleton/IssueSkeleton';
 import PageContainer from '../components/PageContainer';
 import useIssueData from '../hooks/useIssueData';
 import { STATUS_LOADING, STATUS_FAILED, STATUS_SUCCEEDED } from '../constants/statusConstants';
+import './IssuePage.css';
 
 const IssuePage = () => {
   const { id } = useParams<{ id: string }>();
@@ -30,9 +31,9 @@ const IssuePage = () => {
 
             <Row className="mt-5 justify-content-center">
               <Col xs="12" lg="10">
-                <div className="text-center mb-4">
-                  <h3 className="mb-1">Character Gallery</h3>
-                  <p className="text-muted mb-0">
+                <div className="text-center mb-4 character-gallery-header">
+                  <h3 className="mb-2 character-gallery-title">Character Gallery</h3>
+                  <p className="character-gallery-subtitle mb-0">
                     Meet the heroes and villains that make this issue unforgettable.
                   </p>
                 </div>

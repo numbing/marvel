@@ -12,7 +12,7 @@ const ComicNavbar = () => {
   return (
     <Navbar expand="md" className="comic-navbar" container="fluid">
       <NavbarBrand tag={NavLink} to="/" onClick={close} className="comic-navbar-brand">
-        Comics Explorer
+        <span className="brand-icon">💥</span> Comics Explorer
       </NavbarBrand>
       <NavbarToggler onClick={toggle} className="comic-navbar-toggler" aria-label="Toggle navigation" />
       <Collapse isOpen={isOpen} navbar>

@@ -17,7 +17,7 @@
 .issue-header-card {
   border: none;
   border-radius: 1.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, #fef3f2 50%, #fef2f2 100%);
+  background: #ffffff;
   box-shadow:
     0 20px 40px rgba(255, 107, 53, 0.15),
     0 10px 25px rgba(139, 92, 246, 0.1),
@@ -32,11 +32,13 @@
 .issue-header-card::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
+  top: 20%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 107, 53, 0.08);
+  border-radius: 50%;
+  filter: blur(60px);
   animation: pulse 8s ease-in-out infinite;
   pointer-events: none;
 }
@@ -77,7 +79,7 @@
   aspect-ratio: 3 / 4;
   border-radius: 1.2rem;
   overflow: hidden;
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #fdc830 100%);
+  background: #ff6b35;
   box-shadow:
     0 15px 35px rgba(255, 107, 53, 0.4),
     0 8px 15px rgba(139, 92, 246, 0.2),
@@ -137,7 +139,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  background: #ff6b35;
   box-shadow:
     0 4px 12px rgba(255, 107, 53, 0.4),
     inset 0 -2px 0 rgba(0, 0, 0, 0.1),
@@ -150,13 +152,9 @@
   margin: 0;
   font-weight: 800;
   line-height: 1.15;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #1e293b;
   position: relative;
   z-index: 1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .issue-meta {
@@ -174,7 +172,7 @@
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  background: #8b5cf6;
   color: #ffffff;
   box-shadow:
     0 4px 10px rgba(139, 92, 246, 0.3),

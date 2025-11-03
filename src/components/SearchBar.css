@@ -63,7 +63,7 @@
   padding: 0.85rem 2rem;
   font-weight: 700;
   font-size: 1.05rem;
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  background: #ff6b35;
   color: #ffffff;
   margin: 4px;
   box-shadow:
@@ -89,7 +89,7 @@
 }
 
 .search-bar-form .btn:hover:not(:disabled) {
-  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  background: #8b5cf6;
   transform: scale(1.05) translateY(-2px);
   box-shadow:
     0 10px 25px rgba(139, 92, 246, 0.5),

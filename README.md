@@ -21,7 +21,7 @@ npm install
 
 ### 2. Configure API Key
 
-Create a `.env.local` file in the project root:
+Create a `.env` file in the project root:
 
 ```
 REACT_APP_COMICVINE_API_KEY=your_api_key_here

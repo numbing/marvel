@@ -12,7 +12,7 @@ const ComicNavbar = () => {
   return (
     <Navbar expand="md" className="comic-navbar" container="fluid">
       <NavbarBrand tag={NavLink} to="/" onClick={close} className="comic-navbar-brand">
-        <img src="/logo.png" alt="Logo" className="brand-icon" /> Comics Explorer
+        <img src="/logo.png" alt="Logo" className="brand-icon" /> Marvel
       </NavbarBrand>
       <NavbarToggler onClick={toggle} className="comic-navbar-toggler" aria-label="Toggle navigation" />
       <Collapse isOpen={isOpen} navbar>

@@ -10,20 +10,6 @@ interface CharacterGridProps {
   error: string | null;
 }
 
-const getInitials = (name: string) => {
-  const trimmed = name.trim();
-  if (!trimmed) {
-    return '??';
-  }
-
-  const parts = trimmed.split(/\s+/);
-  if (parts.length === 1) {
-    return parts[0].slice(0, 2).toUpperCase();
-  }
-
-  return (parts[0][0] + parts[1][0]).toUpperCase();
-};
-
 const CharacterGrid = ({ characters, status, error }: CharacterGridProps) => {
   if (status === STATUS_FAILED) {
     return (
@@ -56,7 +42,7 @@ const CharacterGrid = ({ characters, status, error }: CharacterGridProps) => {
                 {character.imageUrl ? (
                   <img src={character.imageUrl} alt={`${character.name} portrait`} />
                 ) : (
-                  <span>{getInitials(character.name)}</span>
+                  <span>{character.name}</span>
                 )}
               </div>
               <CardBody className="p-0">

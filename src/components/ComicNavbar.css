@@ -11,32 +11,6 @@
   position: relative;
 }
 
-.comic-navbar::before {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: #8b5cf6;
-}
-
-.comic-navbar::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  height: 5px;
-  width: 30%;
-  background: #fdc830;
-  animation: navbar-shimmer 4s linear infinite;
-}
-
-@keyframes navbar-shimmer {
-  0% { left: 0; }
-  50% { left: 70%; }
-  100% { left: 0; }
-}
 
 .comic-navbar-brand {
   font-weight: 900;
